@@ -45,9 +45,9 @@ LOCAL_HEADER_LIBRARIES := \
     libloc_pla_headers \
     liblocation_api_headers
 LOCAL_CFLAGS += $(GNSS_CFLAGS)
-include $(BUILD_SHARED_LIBRARY)
+#include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libloc_api_v02_headers
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)
-include $(BUILD_HEADER_LIBRARY)
+#include $(BUILD_HEADER_LIBRARY)
